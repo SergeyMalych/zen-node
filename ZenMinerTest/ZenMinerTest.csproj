@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0155238D-57D5-4C3D-962D-4F6A2799D4B0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ZenMinerTest</RootNamespace>
+    <AssemblyName>ZenMinerTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="AsyncIO">
+      <HintPath>..\..\..\Desktop\zen\zen\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="basic">
+      <HintPath>..\..\..\Desktop\zen\zen\basic.dll</HintPath>
+    </Reference>
+    <Reference Include="BlockChain">
+      <HintPath>..\..\..\Desktop\zen\zen\BlockChain.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\Desktop\zen\zen\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CLRCLI">
+      <HintPath>..\..\..\Desktop\zen\zen\CLRCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="Consensus">
+      <HintPath>..\..\..\Desktop\zen\zen\Consensus.dll</HintPath>
+    </Reference>
+    <Reference Include="ContractExamples">
+      <HintPath>..\..\..\Desktop\zen\zen\ContractExamples.dll</HintPath>
+    </Reference>
+    <Reference Include="ContractGenerator">
+      <HintPath>..\..\..\Desktop\zen\zen\ContractGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="ContractUtilities">
+      <HintPath>..\..\..\Desktop\zen\zen\ContractUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DBreeze">
+      <HintPath>..\..\..\Desktop\zen\zen\DBreeze.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Compatibility.OCaml">
+      <HintPath>..\..\..\Desktop\zen\zen\FSharp.Compatibility.OCaml.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\..\..\Desktop\zen\zen\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data">
+      <HintPath>..\..\..\Desktop\zen\zen\FSharp.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PPrint">
+      <HintPath>..\..\..\Desktop\zen\zen\FSharp.PPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="FsLexYacc.Runtime">
+      <HintPath>..\..\..\Desktop\zen\zen\FsLexYacc.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FsPickler">
+      <HintPath>..\..\..\Desktop\zen\zen\FsPickler.dll</HintPath>
+    </Reference>
+    <Reference Include="FsPickler.Json">
+      <HintPath>..\..\..\Desktop\zen\zen\FsPickler.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="FStar_Utils">
+      <HintPath>..\..\..\Desktop\zen\zen\FStar_Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Infrastructure">
+      <HintPath>..\..\..\Desktop\zen\zen\Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Miner">
+      <HintPath>..\..\..\Desktop\zen\zen\Miner.dll</HintPath>
+    </Reference>
+    <Reference Include="MsgPack">
+      <HintPath>..\..\..\Desktop\zen\zen\MsgPack.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>..\..\..\Desktop\zen\zen\NDesk.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ">
+      <HintPath>..\..\..\Desktop\zen\zen\NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Network">
+      <HintPath>..\..\..\Desktop\zen\zen\Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Desktop\zen\zen\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\Desktop\zen\zen\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Open.Nat">
+      <HintPath>..\..\..\Desktop\zen\zen\Open.Nat.dll</HintPath>
+    </Reference>
+    <Reference Include="parser">
+      <HintPath>..\..\..\Desktop\zen\zen\parser.dll</HintPath>
+    </Reference>
+    <Reference Include="prettyprint">
+      <HintPath>..\..\..\Desktop\zen\zen\prettyprint.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>..\..\..\Desktop\zen\zen\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="Sodium">
+      <HintPath>..\..\..\Desktop\zen\zen\Sodium.dll</HintPath>
+    </Reference>
+    <Reference Include="Store">
+      <HintPath>..\..\..\Desktop\zen\zen\Store.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\Desktop\zen\zen\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata">
+      <HintPath>..\..\..\Desktop\zen\zen\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Desktop\zen\zen\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unquote">
+      <HintPath>..\..\..\Desktop\zen\zen\Unquote.dll</HintPath>
+    </Reference>
+    <Reference Include="Wallet.core">
+      <HintPath>..\..\..\Desktop\zen\zen\Wallet.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Wallet">
+      <HintPath>..\..\..\Desktop\zen\zen\Wallet.dll</HintPath>
+    </Reference>
+    <Reference Include="zen">
+      <HintPath>..\..\..\Desktop\zen\zen\zen.exe</HintPath>
+    </Reference>
+    <Reference Include="Zen.FSharp.Compiler.Service">
+      <HintPath>..\..\..\Desktop\zen\zen\Zen.FSharp.Compiler.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Zen.RPC.Common">
+      <HintPath>..\..\..\Desktop\zen\zen\Zen.RPC.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zulib">
+      <HintPath>..\..\..\Desktop\zen\zen\Zulib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
